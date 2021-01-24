@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { detailProduct } from "./data";
+import img from "./components/img/harry.jpg";
 
 const ProductContext = React.createContext();
 
@@ -40,7 +41,7 @@ class ProductProvider extends Component {
     storeProducts.slice(0, 10).forEach((item) => {
       const singleItem = {
         ...item,
-        img: "img/harry.jpg",
+        img: img,
         inCart: false,
         count: 0,
         total: 0

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ProductConsumer } from "../context";
 import PropTypes from "prop-types";
 import ReactStars from "react-rating-stars-component";
+import imgg from "./img/harry.jpg";
 
 export default class Product extends Component {
   render() {
@@ -25,7 +26,11 @@ export default class Product extends Component {
                 onClick={() => value.handleDetail(bookID)}
               >
                 <Link to="/details">
-                  <img src={img} alt="product" className="card-img-top" />
+                  <img
+                    src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=409&h=545&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F09%2F9781408855690.jpg"
+                    alt="product"
+                    className="card-img-top"
+                  />
                 </Link>
                 <button
                   className="cart-btn"
