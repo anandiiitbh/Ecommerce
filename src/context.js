@@ -32,13 +32,15 @@ class ProductProvider extends Component {
       requestOptions
     )
       .then((response) => response.json())
-      .then((result) => (storeProducts = result))
+      .then((result) => {
+        return (storeProducts = result);
+      })
       .catch((error) => console.log("error", error));
 
-    storeProducts.forEach((item) => {
+    storeProducts.slice(0, 10).forEach((item) => {
       const singleItem = {
         ...item,
-        img: "img/2359.jpg",
+        img: "img/harry.jpg",
         inCart: false,
         count: 0,
         total: 0

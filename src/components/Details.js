@@ -50,9 +50,6 @@ export default class Details extends Component {
                     count={average_rating}
                     size={10}
                     isHalf={true}
-                    emptyIcon={<i className="far fa-star"></i>}
-                    halfIcon={<i className="fa fa-star-half-alt"></i>}
-                    fullIcon={<i className="fa fa-star"></i>}
                     activeColor="#ffd700"
                   />
                   <p className="text-capitalize font-weight-bold mt-3 mb-0">

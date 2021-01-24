@@ -55,6 +55,7 @@ export default class Product extends Component {
             </h5>
           </div>
 
+          {"(" + average_rating + ")"}
           <ReactStars
             count={average_rating}
             size={10}
