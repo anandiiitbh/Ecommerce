@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { detailProduct } from "./data";
-import img from "./components/img/harry.jpg";
 
 const ProductContext = React.createContext();
 
@@ -41,7 +40,8 @@ class ProductProvider extends Component {
     storeProducts.slice(0, 10).forEach((item) => {
       const singleItem = {
         ...item,
-        img: img,
+        img:
+          "https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=409&h=545&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2016%2F09%2F9781408855690.jpg",
         inCart: false,
         count: 0,
         total: 0
